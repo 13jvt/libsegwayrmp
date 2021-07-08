@@ -226,7 +226,7 @@ void MainWindow::handleSegwayLog(QString log) {
     ui->statusbar->showMessage(log, 3000);
 }
 
-void MainWindow::onSegwayStatus(segwayrmp::SegwayStatus::Ptr ss) {
+void MainWindow::onSegwayStatus(const segwayrmp::SegwayStatus::Ptr &ss) {
     QString qss = QString::fromStdString(ss->str());
     emit segwayStatus(QString("Time Stamp:\n%1").arg(qss));
 }

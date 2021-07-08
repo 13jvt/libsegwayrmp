@@ -49,7 +49,7 @@ public:
     ~MainWindow();
 
     void onSegwayLog(QString, const std::string&);
-    void onSegwayStatus(segwayrmp::SegwayStatus::Ptr);
+    void onSegwayStatus(const segwayrmp::SegwayStatus::Ptr&);
     
 private:
     Ui::MainWindow *ui;

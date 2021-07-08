@@ -34,7 +34,7 @@ include(cmake/segwayrmp_serial.cmake)
 include(cmake/segwayrmp_ftd2xx.cmake)
 
 # Configure Graphical User Interface
-include(cmake/segwayrmp_gui.cmake)
+# include(cmake/segwayrmp_gui.cmake)
 
 ## Build the segwayrmp project
 
